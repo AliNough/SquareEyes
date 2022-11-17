@@ -1,0 +1,103 @@
+@import "/Styles/home.css";
+
+
+
+.frontLine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/background2.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: auto;
+    min-height: 845px;
+}
+
+.signInContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30rem;
+    height: 30rem;
+    background-color: rgba(0, 0, 0, 0.822);
+    border-radius: 4px;
+    gap: 2rem;
+}
+
+.signInContainer h2 {
+    margin-top: 1rem;
+    color: var(--white);
+    letter-spacing: 2px;
+}
+
+.signInForm{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-self: center; */
+    gap: 2rem;
+    min-width: 60%;
+    /* background-color: red; */
+}
+
+.emailPassGrp{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 1rem;
+}
+
+.emailPassGrp input {
+    padding: 10px 10px;
+    font-size: 1.2rem;
+    border-width: 1px;
+    border-radius: 5px;
+}
+.submitContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.rememberMeGrp{
+    color: var(--white);
+}
+
+
+.submitButton{
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.4rem;
+    background-color: var(--orange);
+    padding: 8px 0px;
+    border-radius: 5px;
+}
+
+.newUserGrp{
+    display: flex;
+    gap: 10px;
+    font-size: small;
+}
+
+.newUserGrp p{
+    color: var(--white);
+}
+.newUserGrp a{
+    color: var(--orange);
+}
+
+footer{
+    display: flex;
+    height: 35px;
+    background-color: var(--black);
+}
+
+.copyright{
+    color: var(--white);
+    justify-content: center;
+    align-self: center;
+}

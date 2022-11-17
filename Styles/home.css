@@ -1,0 +1,149 @@
+@import "/Styles/home.css";
+
+:root{
+    --black: #242424;
+    --lightBlack: #333333;
+    --white: #EBF2FA;
+    --red: rgba(97, 38, 31, 1);
+    --orange: #FF8A5B;
+}
+
+*{
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0; 
+}
+
+body{
+    background-color: var(--black);
+    margin: 0;
+}
+
+/* header start  */
+header{
+    display: flex;
+    position: sticky;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+    background-color: var(--red);
+    width: 100%;
+    height: 7vh;
+}
+
+header nav{
+    overflow: hidden;
+    width: 100%; 
+    align-self: center;
+}
+header ul {
+    display: flex;
+    float: right;
+    gap: 2em;
+    margin: revert;
+    margin-right: 2rem;
+}
+
+.headerLogo{
+    padding: 2px 20px;
+    padding-right: 6rem;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.63) 40%, rgba(97,38,31,1) 90%);
+}
+
+.signInButton{
+    color: var(--black);
+    background-color: var(--orange);
+    text-decoration: none;
+    border: 0;
+    border-radius: 5px;
+    padding: 8px 25px;
+
+    font-size: 16px;
+}
+.aboutButton{
+    color: var(--white);
+    text-decoration: none;
+    align-self: center;
+}
+
+.contactButton{
+    color: var(--white);
+    text-decoration: none;
+    align-self: center;
+    margin-right: 2rem;
+}
+/* header end  */
+
+
+.frontLine{
+    display: flex;
+    background-image: url(../images/background2.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: auto;
+    min-height: 845px;
+}
+
+.container{
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin-left: 8%;
+}
+
+.logo{
+    position: relative;
+    transform: scale(0.8);
+    top: 1em; 
+    max-width: 100%;
+    width:auto;
+}
+
+.description{
+    color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    /* background-color: #33333328; */
+    min-width: 20rem;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+    text-shadow:   0 1px 3px #fffefe;
+}
+.signUpButton{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding: 14px 100px;
+    border-width: 0px;
+    border-radius: 5px;
+    font-size: 1.4em;
+    background-color: var(--red);
+    color: var(--white);
+    text-decoration: none;
+}
+
+
+
+
+footer{
+    display: flex;
+    /* position:relative; */
+    height: 28px;
+    background-color: var(--black);
+}
+
+.copyright{
+    color: var(--white);
+    justify-content: center;
+    align-self: center;
+}
+
+@media screen and (max-width: 690px) {
+
+    .container{
+        display: none;
+    }
+    
+}
