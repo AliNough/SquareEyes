@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Styles/home.css">
+    <script src="toggle-element.js" defer></script>
     <title>Square Eyes | stream without limits</title>
 </head>
 <body>
@@ -13,8 +14,15 @@
         <nav>
             <ul>
                 <a href="/loginPage.html" class="signInButton">Sign in</a>
-                <a class="aboutButton" href="/about.html">About</a>
-                <a class="contactButton" href="/contact.html">contact</a>
+                <a class="aboutButton outsideMenuElements" href="/about.html">About</a>
+                <a class="contactButton outsideMenuElements" href="/contact.html">contact</a>
+                <input type="checkbox" class="menuButton" id="js-toggle-button"></input>
+                <label for="js-toggle-button"><img class="hamburger-menu" src="/images/hamburger.png" alt="hamburgerMenu"></label>
+                <section id="js-menu" class="menu">
+                    <a class="aboutButton insideMenuElements" href="/about.html">About</a>
+                    <a class="contactButton insideMenuElements" href="/contact.html">Contact</a>
+                    
+                </section>
             </ul>
         </nav>
     </header>

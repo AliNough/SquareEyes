@@ -1,0 +1,197 @@
+@import url(/Styles/home.css);
+@import url(/Styles/browse.css);
+
+.product-main-parent{
+    padding-top: 20px;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: auto;
+    /* grid-template-columns: 100%; */
+    overflow-x: hidden;
+}
+
+.product-info-container{
+    display: grid;
+    grid-template-areas: 
+            "productImg trailer trailer"
+            ". trailer trailer"
+            "productInfo description description";
+    grid-template-columns: 20vw auto;
+     
+
+    /* grid-template-rows: 30vw; */
+    height: auto;
+    max-width: 90vw;
+}
+
+.product-image-container{
+    grid-area: productImg;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    align-content: center;
+    align-items: center;
+    
+
+    background-color: blueviolet;
+    background-image: url(/images/Square_Eyes_Cover3.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20vw;
+    height: 30vw;
+    margin-left: 20px;
+}
+
+
+.playIcon{
+    display: none;
+    border-radius: 20%;
+    width: 8rem;
+    height: 8rem;
+    /* box-shadow: inset 0px 0px 20px 10px rgb(255, 255, 255); */
+    animation-name: yes;
+}
+
+.product-image-container:hover .playIcon {
+    display: block;
+
+}
+
+/* .productImage{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+} */
+
+.movie-trailer-container{
+    display: flex;
+    justify-content: center;
+    grid-area: trailer;
+    /* background-color: yellowgreen; */
+}
+.trailer-display{
+    /* align-self: center; */
+    background-color: black;
+    width: 55vw;
+    height: 100%;
+
+}
+
+.productInfo{
+    grid-area: productInfo;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 6px;
+    padding-left: 4px;
+    /* background-color: rgb(168, 244, 244); */
+}
+
+.infoTag{
+    background-color: rgba(63, 63, 63, 0.13);
+    padding: 8px 15px;
+}
+
+.infoTag span{
+    margin-right: 10px;
+    font-size: 90%;
+}
+
+.infoTag a{
+    font-weight: 900;
+}
+
+.infoTag a, span {
+    color: var(--white);
+}
+.specs{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 8px;
+}
+
+.movie-description{
+    grid-area: description;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    padding: 20px 60px;
+    color: aliceblue;
+}
+
+.test{
+    background-color: blue;
+    height: 20px;
+    width: 20px;
+}
+
+@media screen and (max-width: 990px) {
+
+
+
+    .product-info-container{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        /* grid-template-rows: 1fr 1fr; */
+        grid-template-areas: 
+            "productImg trailer trailer"
+            "productInfo description description";
+            /* "description  description description"; */
+
+        max-width: 100vw;
+        }
+
+        .product-image-container{
+            margin-left: 0px;
+            width: 30vw;
+            height: 45vw;
+        }
+
+        .productImage{
+            width: 40vw;
+        }
+
+        .playIcon{
+            width: 6rem;
+            height: 6rem;
+        }
+
+        .trailer-display{
+            align-self: center;
+            width: 60vw;
+            height: 33vw;
+        }
+
+        .movie-description{
+            padding: 10px 10px;
+            font-size: 16px;
+        }
+
+        .infoTag{
+            padding: 5px 10px;
+        } 
+
+        .infoTag a {
+            font-size: small;
+        }
+
+        .productInfo{
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 1px;
+        }
+
+        .cast{
+            
+        }
+
+        .specs{
+            display: flex;
+            flex-direction: column;
+            margin-top: 5px;
+            gap: 3px;
+        }
+}
