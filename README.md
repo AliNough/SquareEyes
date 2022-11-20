@@ -40,4 +40,16 @@ Product Page:
     I wanted the user to be able to see all the informations before deciding to play the movie. Now I know that the actual play button can be hard to find for peaple who dont think to hover the mouse over the product image but that was just a learning experiment I did, make the play button appear when hovering over the image and I was really excited to make it work.
 
     To the right I added a section for movie trailer that in retroperspective is a bit unnecessary specially in small screens like 320px smartphones. 
+
+Contact and about page:
+    Very simple and straight forward. The most challanging part was really the form of contact page, not making it but making it appear and disapear without messing with everything in the page. in the end I once again returned to my goodest friend, grid. With grid you can simply put anything anywhere you want as long as you have an understanding of what part of of you html code you need to imply grid. 
+
+Summary:
+    This was a great practice, I learned tons of useful stuff here and I will most likely view these codes again and again when im stuck woth something. I've discovered if you retrace your stepps.
+
+    If I could do it again i would deffinatly rethink my structure in html. The naming part of coding is truly hard. what name to give a container that contains another container that contains 5 sections and so on... 
+
+    The design park of this website was not really ideall. I do like design but that does not mean I'm good at it.
+
+    All in all I hope I did something right atleast and it was not all crappy code, because this was indeed made with <3 by me 
   
