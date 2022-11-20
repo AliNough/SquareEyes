@@ -44,8 +44,9 @@ Product Page:
 Contact and about page:
     Very simple and straight forward. The most challanging part was really the form of contact page, not making it but making it appear and disapear without messing with everything in the page. in the end I once again returned to my goodest friend, grid. With grid you can simply put anything anywhere you want as long as you have an understanding of what part of of you html code you need to imply grid. 
 
-Summary:
-    This was a great practice, I learned tons of useful stuff here and I will most likely view these codes again and again when im stuck woth something. I've discovered if you retrace your stepps.
+conclusion:
+    This was great practice, I learned tons of useful stuff here and I will most likely view these codes again and again when I'm stuck with something. I've discovered if you retrace your steps you can more often than not figure out what the problem is that seemingly doesn't make sense, although it does not make it less frustrating at the time.
+
 
     If I could do it again i would deffinatly rethink my structure in html. The naming part of coding is truly hard. what name to give a container that contains another container that contains 5 sections and so on... 
 
