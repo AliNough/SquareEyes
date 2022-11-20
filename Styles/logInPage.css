@@ -6,12 +6,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../images/background2.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    width: auto;
-    height: auto;
-    min-height: 845px;
 }
 
 .signInContainer {

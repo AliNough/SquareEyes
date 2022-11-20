@@ -44,6 +44,7 @@ header ul {
 }
 
 .headerLogo{
+    height: -webkit-fill-available;
     padding: 2px 20px;
     padding-right: 6rem;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.63) 40%, rgba(97,38,31,1) 90%);
@@ -63,6 +64,7 @@ header ul {
     color: var(--white);
     text-decoration: none;
     align-self: center;
+    font-size: 1.2rem;
 }
 
 
@@ -76,26 +78,6 @@ header ul {
     color: var(--orange);
 }
 
-.insideMenuElements{
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    
-    width: 100%;
-    margin: 0;
-    padding: 10px 0px;
-    font-size: 1.5rem;
-
-    color: var(--white);
-    text-decoration: none;
-    border-bottom: solid white;
-    box-shadow: inset 0px 0px 20px 0px rgba(128, 128, 128, 0.355);
-}
-
-
-.menu .signOutButton{
-    color: red
-}
 
 .menuButton{
     display: none;
@@ -111,15 +93,35 @@ header ul {
     top: 7%;
     left: 0%;
     
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.80);
     color: antiquewhite;
     width: 100%;
     height: 100%;
     gap: 5px;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 
+.insideMenuElements{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    
+    width: 100%;
+    margin: 0;
+    padding: 10px 0px;
+    font-size: 1.5rem;
+
+    color: var(--white);
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    box-shadow: inset 0px 0px 20px 0px rgba(128, 128, 128, 0.355);
+}
+
+
+.menu .signOutButton{
+    color: red
+}
 
 .is-visible {
     display: flex;
@@ -129,6 +131,8 @@ header ul {
 
 .frontLine{
     display: flex;
+    position: relative;
+    z-index: 0;
     justify-content: center;
     background-image: url(../images/background2.jpg);
     
@@ -136,18 +140,20 @@ header ul {
     background-repeat: no-repeat;
     width: auto;
     height: auto;
-    min-height: 845px;
+    min-height: 940px;
 }
 
 .container{
     /* display: none; */
+    margin-right: 30vw;
     display: flex;
     flex-direction: column;
     max-width: 50%;
+    align-items: center;
 }
 
 .logo{
-    position: relative;
+    
     transform: scale(0.8);
     /* top: 1em;  */
     max-width: 100%;
@@ -181,7 +187,9 @@ header ul {
     text-decoration: none;
 }
 
-
+.sign-in-small-screen{
+    display: none;
+}
 
 
 footer{
@@ -198,31 +206,73 @@ footer{
 }
 
 @media screen and (max-width: 690px) {
+    
     .frontLine{
-        position: relative;
-        z-index: 100;
-
+        position: static;
+        z-index: 10;
+        /* background-size: cover; */
+        height: 20px;
+        
     }
     
-    .container{
-        /* display: none; */
-        position: relative;
-        max-width: 90%;
-        align-content: center;
-        align-items: center;
-    }
-
     .hamburger-menu{
         display: flex;
-        position: relative;
+        z-index: 500;
     }
+    .container{
+        /* display: none; */
+        position: static;
+        max-width: 90%;
+        margin-right: 0;
+        margin-top: 60px;
+    }
+    
+    img .logo{
+        /* overflow: hidden; */
 
+        position: static;
+        z-index: 11;
+    }
+    
+    
     .outsideMenuElements{
         display: none;
     }
 
+    .signUpButton{
+        padding: 12px 85px;
+     margin-top: 10px;
+
+    }
+    
     .signInButton{
         display: none;
     }
     
+    .sign-in-small-screen{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+        width: 20vw;
+        height: auto;
+        border: 1px solid black;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    body{
+        overflow-x: hidden;
+    }
+    
+    .frontLine{
+        background-image: url(/images/background-320.png);
+        background-size: cover;
+    }
+    
+    .searchBox{
+        display: none;
+    }
+
 }

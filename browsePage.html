@@ -14,14 +14,23 @@
         <nav>
             <ul>
                 <!-- <a href="/loginPage.html" class="signInButton">Sign in</a> -->
-                <a class="aboutButton outsideMenuElements" href="/about.html">About</a>
-                <a class="contactButton outsideMenuElements" href="/contact.html">contact</a>
+                <input type="search" class="searchBox" placeholder="Search"></input>
+                <a class="aboutButton outsideMenuElements" href="/aboutPage.html">About</a>
+                <a class="contactButton outsideMenuElements" href="/contactPage.html">contact</a>
                 <a class="signOutButton outsideMenuElements" href="/index.html">Sign Out</a>
                 <input type="checkbox" class="menuButton" id="js-toggle-button"></input>
                 <label for="js-toggle-button"><img class="hamburger-menu" src="/images/hamburger.png" alt="hamburgerMenu"></label>
                 <section id="js-menu" class="menu">
-                    <a class="aboutButton insideMenuElements" href="/about.html">About</a>
-                    <a class="contactButton insideMenuElements" href="/contact.html">Contact</a>
+                    <a class="insideMenuElements page-is-selected" href="/browsePage.html">Home</a>
+                    <a class="insideMenuElements" href="">Action</a>
+                    <a class="insideMenuElements" href="">Animation</a>
+                    <a class="insideMenuElements" href="">Biography</a>
+                    <a class="insideMenuElements" href="">Comedy</a>
+                    <a class="insideMenuElements" href="">Documentry</a>
+                    <a class="insideMenuElements" href="">Horror</a>
+                    <a class="insideMenuElements" href="">Romance</a>
+                    <a class="aboutButton insideMenuElements" href="/aboutPage.html">About</a>
+                    <a class="contactButton insideMenuElements" href="/contactPage.html">Contact</a>
                     <a class="signOutButton insideMenuElements" href="/index.html">Sign Out</a>
                 </section>
             </ul>
@@ -30,7 +39,7 @@
     <section class="main-container">
         <section class="aside">
             <ul class="asideList">
-                <a href="">Home</a>
+                <a class="page-is-selected" href="/browsePage.html">Home</a>
                 <a href="">Action</a>
                 <a href="">Animation</a>
                 <a href="">Biography</a>

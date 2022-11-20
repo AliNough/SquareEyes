@@ -35,7 +35,7 @@
     align-items: center;
     
 
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     background-image: url(/images/Square_Eyes_Cover3.jpeg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -182,10 +182,6 @@
             display: flex;
             flex-direction: column-reverse;
             gap: 1px;
-        }
-
-        .cast{
-            
         }
 
         .specs{
