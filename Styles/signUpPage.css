@@ -54,7 +54,7 @@
 .subs-optn h2,
 .subs-optn ul {
   margin-left: 20px;
-  color: rgb(240, 218, 218);
+  color: rgb(243, 226, 226);
 }
 .continue-btn {
   background-color: brown;
@@ -69,15 +69,22 @@
   padding: 10px 20px;
 }
 
-/* Styling for sign up form */
-
+/*  ----  Styling for sign up form ---- */
+.success-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: bisque;
+  height: 500px;
+  width: 70%;
+}
 .checkout-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   /* background-color: aquamarine; */
-  height: 700px;
+  height: 900px;
   width: 100%;
 }
 
@@ -96,7 +103,7 @@
   justify-content: center;
   border-radius: 3px;
   background-color: rgba(109, 99, 97, 0.419);
-  height: 600px;
+  height: 700px;
   width: 40%;
   gap: 30px;
   box-shadow: 0px 7px 10px 0px rgba(240, 231, 222, 0.408);
@@ -110,7 +117,7 @@
 
 .form-headings h2,
 .form-headings h3 {
-  color: antiquewhite;
+  color: rgb(247, 241, 233);
 }
 
 .form-name {
@@ -161,9 +168,13 @@
   font-size: 0.9rem;
 }
 
-.show-msg {
+.show {
   display: block;
 }
-.hide-msg {
+.hide {
   display: none;
+}
+
+.submit-form-btn {
+  background-color: rgb(115, 179, 219);
 }

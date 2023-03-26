@@ -42,12 +42,17 @@
     </header>
     <main>
       <section class="checkout-container">
-        <div class="form-wrapper">
+        <div id="js-success-holder" class="success-wrapper hide">
+          <h2>All done!</h2>
+          <h3>You can now browse all you want</h3>
+          <a class="toBrowseBtn" href="/browsePage.html">Go to browse</a>
+        </div>
+        <div id="js-form-holder" class="form-wrapper">
           <div class="form-headings">
             <h2>Almost done!</h2>
             <h3>Just need a few information from you</h3>
           </div>
-          <form class="personal-info-container" action="" required>
+          <form id="js-form" class="personal-info-container" action="">
             <div class="form-name" id="js-full-name">
               <input
                 type="text"
@@ -109,7 +114,7 @@
             />
             <div id="validation-holder" class="validation-text hide-msg"></div>
 
-            <div class="MOP-form">
+            <div id="js-mob-grp" class="MOP-form">
               <input
                 type="number"
                 class="form card-nr"
@@ -118,10 +123,6 @@
                 id="js-cardnumber"
                 required
               />
-              <div
-                id="validation-holder"
-                class="validation-text hide-msg"
-              ></div>
 
               <input
                 type="number"
@@ -131,11 +132,6 @@
                 id="js-cvc"
                 required
               />
-              <div
-                id="validation-holder"
-                class="validation-text hide-msg"
-              ></div>
-
               <input
                 type="date"
                 name="date"
@@ -143,18 +139,13 @@
                 class="form date-inpt"
                 required
               />
-              <div
-                id="validation-holder"
-                class="validation-text hide-msg"
-              ></div>
-
-              <p id="validation-holder" class="validation-text"></p>
             </div>
+            <div id="validation-holder" class="validation-text hide-msg"></div>
             <input
               type="submit"
               name="submit"
               id="js-submit-form"
-              class="form submit-form"
+              class="form submit-form-btn"
             />
           </form>
         </div>
