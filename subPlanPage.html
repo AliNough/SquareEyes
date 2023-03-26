@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/Styles/signUpPage.css" />
+    <script defer src="/main.js"></script>
+    <title>Square Eyes | Sign Up</title>
+  </head>
+  <body>
+    <header>
+      <img class="headerLogo" src="./images/SquareEyes_Logo1.png" alt="logo" />
+      <nav>
+        <div>
+          <a href="/loginPage.html" class="signInButton">Sign in</a>
+          <a class="aboutButton outsideMenuElements" href="/aboutPage.html"
+            >About</a
+          >
+          <a class="contactButton outsideMenuElements" href="/contactPage.html"
+            >contact</a
+          >
+          <input type="checkbox" class="menuButton" id="js-toggle-button" />
+          <label for="js-toggle-button"
+            ><img
+              class="hamburger-menu"
+              src="/images/hamburger.png"
+              alt="hamburgerMenu"
+          /></label>
+          <section id="js-menu" class="menu">
+            <a class="aboutButton insideMenuElements" href="/aboutPage.html"
+              >About</a
+            >
+            <a class="contactButton insideMenuElements" href="/contactPage.html"
+              >Contact</a
+            >
+          </section>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="js-subs-sect" class="subs-choices">
+        <h2>Choose your plan</h2>
+        <div class="subs-container">
+          <input
+            type="radio"
+            name="sub-radio"
+            id="sub-type1"
+            class="sub-radio-inpt"
+          />
+          <label
+            id="js-mnt-plan-holder"
+            class="subs-optn optn1"
+            for="sub-type1"
+          >
+            <div class="plan-details-container">
+              <h2>Monthly</h2>
+              <ul>
+                <li>Unlimited Streaming</li>
+                <li>Up to 3 accounts</li>
+                <li>Download and watch offline</li>
+                <li>UHD resolution</li>
+              </ul>
+            </div>
+          </label>
+          <input
+            type="radio"
+            name="sub-radio"
+            id="sub-type2"
+            class="sub-radio-inpt"
+          />
+          <label
+            id="js-annual-plan-holder"
+            class="subs-optn optn2"
+            for="sub-type2"
+          >
+            <div class="plan-details-container">
+              <h2>Annual</h2>
+              <ul>
+                <li>Unlimited Streaming</li>
+                <li>Up to 5 accounts</li>
+                <li>Download and watch offline</li>
+                <li>UHD resolution</li>
+              </ul>
+            </div>
+          </label>
+        </div>
+        <a href="signUpFormPage.html" class="continue-btn">Continue</a>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+@import url(/Styles/home.css);
+
+.nav-sidebar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 10px;
+  width: 100%;
+  gap: 50px;
+  /* background-color: bisque; */
+}
+
+.nav-sidebar-container h4,
+.nav-sidebar-container h2 {
+  color: rgb(255, 248, 240);
+}
+
+.nav-sidebar-container h4 {
+  border-bottom: 1px solid black;
+}
+
+.l-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgb(50, 49, 47);
+  padding: 40px 40px;
+  border-radius: 3px;
+  height: 500px;
+  width: 600px;
+}
+.all-tags {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}

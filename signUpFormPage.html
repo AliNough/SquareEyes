@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/Styles/signUpPage.css" />
+
+    <script defer src="/js/signUpForm.js"></script>
+    <title>Square Eyes | Sign Up</title>
+  </head>
+  <body>
+    <header>
+      <img class="headerLogo" src="./images/SquareEyes_Logo1.png" alt="logo" />
+      <nav>
+        <div>
+          <a href="/loginPage.html" class="signInButton">Sign in</a>
+          <a class="aboutButton outsideMenuElements" href="/aboutPage.html"
+            >About</a
+          >
+          <a class="contactButton outsideMenuElements" href="/contactPage.html"
+            >contact</a
+          >
+          <input type="checkbox" class="menuButton" id="js-toggle-button" />
+          <label for="js-toggle-button"
+            ><img
+              class="hamburger-menu"
+              src="/images/hamburger.png"
+              alt="hamburgerMenu"
+          /></label>
+          <section id="js-menu" class="menu">
+            <a class="aboutButton insideMenuElements" href="/aboutPage.html"
+              >About</a
+            >
+            <a class="contactButton insideMenuElements" href="/contactPage.html"
+              >Contact</a
+            >
+          </section>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="checkout-container">
+        <div class="form-wrapper">
+          <div class="form-headings">
+            <h2>Almost done!</h2>
+            <h3>Just need a few information from you</h3>
+          </div>
+          <form class="personal-info-container" action="" required>
+            <div class="form-name" id="js-full-name">
+              <input
+                type="text"
+                name="f-name"
+                id="js-fname"
+                class="form-fname form"
+                placeholder="First name"
+                required
+              />
+
+              <input
+                type="text"
+                name="l-name"
+                id="js-lname"
+                class="form-lname form"
+                placeholder="Last name"
+                required
+              />
+            </div>
+            <div id="validation-holder" class="validation-text hide-msg"></div>
+
+            <input
+              type="email"
+              name="email"
+              id="js-email"
+              class="form-email form"
+              placeholder="Email"
+              required
+            />
+            <div id="validation-holder" class="validation-text hide-msg"></div>
+
+            <input
+              type="number"
+              name="phonenumber"
+              id="js-phone-nr"
+              placeholder="Phone number"
+              class="form-phone-nr form"
+              required
+            />
+            <div id="validation-holder" class="validation-text hide-msg"></div>
+
+            <input
+              type="password"
+              name="password"
+              id="js-password"
+              class="form pswrd-form"
+              placeholder="Password"
+              required
+            />
+            <div id="validation-holder" class="validation-text hide-msg"></div>
+
+            <input
+              type="password"
+              name="password"
+              id="js-password-rpt"
+              class="form pswrd-form"
+              placeholder="Repeat password"
+              required
+            />
+            <div id="validation-holder" class="validation-text hide-msg"></div>
+
+            <div class="MOP-form">
+              <input
+                type="number"
+                class="form card-nr"
+                name="cardnumber"
+                placeholder="Card number"
+                id="js-cardnumber"
+                required
+              />
+              <div
+                id="validation-holder"
+                class="validation-text hide-msg"
+              ></div>
+
+              <input
+                type="number"
+                class="form cvc-nr"
+                name="cardnumber"
+                placeholder="CVC"
+                id="js-cvc"
+                required
+              />
+              <div
+                id="validation-holder"
+                class="validation-text hide-msg"
+              ></div>
+
+              <input
+                type="date"
+                name="date"
+                id="js-date"
+                class="form date-inpt"
+                required
+              />
+              <div
+                id="validation-holder"
+                class="validation-text hide-msg"
+              ></div>
+
+              <p id="validation-holder" class="validation-text"></p>
+            </div>
+            <input
+              type="submit"
+              name="submit"
+              id="js-submit-form"
+              class="form submit-form"
+            />
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

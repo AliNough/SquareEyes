@@ -1,0 +1,62 @@
+@import url(/Styles/home.css);
+
+.checkout-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: aquamarine; */
+  height: 700px;
+  width: 100%;
+}
+
+.personal-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  gap: 10px;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  background-color: rgba(109, 99, 97, 0.419);
+  height: 400px;
+  width: 40%;
+  gap: 40px;
+  box-shadow: 0px 7px 10px 0px rgba(240, 231, 222, 0.408);
+}
+
+.form-name {
+  display: flex;
+  gap: 9px;
+}
+
+.form {
+  width: 95%;
+  max-width: 630px;
+  padding: 6px 6px;
+  border-radius: 3px;
+  border: 0;
+}
+
+.MOP-form {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  justify-items: center;
+  width: 50%;
+  max-width: 317px;
+  gap: 20px;
+}
+
+.card-nr {
+  width: 100%;
+}
+
+.date-inpt {
+  max-width: 90px;
+}

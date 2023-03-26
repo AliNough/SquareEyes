@@ -4,17 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Styles/home.css" />
-    <script src="toggle-element.js" defer></script>
-    <script src="main.js"></script>
-    <title>Square Eyes | stream without limits</title>
+
+    <link rel="stylesheet" href="/Styles/account.css" />
+    <script defer src="/toggle-element.js"></script>
+    <script defer src="/main.js"></script>
+    <title>Square Eyes | Sign Up</title>
   </head>
   <body>
     <header>
-      <img class="headerLogo" src="./images/SquareEyes_Logo1.png" alt="logo" />
+      <a href="/browsePage.html">
+        <img
+          class="headerLogo"
+          src="./images/SquareEyes_Logo1.png"
+          alt="logo"
+        />
+      </a>
       <nav>
         <div>
-          <a href="/loginPage.html" class="signInButton">Sign in</a>
           <a class="aboutButton outsideMenuElements" href="/aboutPage.html"
             >About</a
           >
@@ -39,18 +45,29 @@
         </div>
       </nav>
     </header>
-    <section class="frontLine">
-      <div class="container">
-        <img class="logo" src="/images/SquareEyes_Logo.png" alt="logo" />
-        <h2 class="description">Stream without limits</h2>
-        <a class="signUpButton" href="/subPlanPage.html">Sign Up</a>
-        <a href="/loginPage.html" class="signInButton sign-in-small-screen"
-          >Sign in</a
-        >
-      </div>
-    </section>
-    <footer>
-      <small class="copyright">Copyright</small>
-    </footer>
+    <main>
+      <section>
+        <div class="nav-sidebar-container">
+          <div class="l-cont">
+            <div class="profile-info-grp all-tags">
+              <h2>Profile info</h2>
+              <h4>Name:</h4>
+              <h4>Phonenumber:</h4>
+              <h4>Email:</h4>
+              <h4>Password:</h4>
+            </div>
+            <div class="payment-method-grp all-tags">
+              <h2>Payment method</h2>
+              <h4>Card number:</h4>
+              <h4>Expiration date:</h4>
+            </div>
+            <div class="sub-plan all-tags">
+              <h2>plan</h2>
+              <h4>Monthly</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

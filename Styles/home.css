@@ -1,278 +1,305 @@
 /* @import "/Styles/home.css"; */
 
-:root{
-    --black: #242424;
-    --lightBlack: #333333;
-    --white: #EBF2FA;
-    --red: rgba(97, 38, 31, 1);
-    --orange: #FF8A5B;
+:root {
+  --black: #242424;
+  --lightBlack: #333333;
+  --white: #ebf2fa;
+  --red: rgba(97, 38, 31, 1);
+  --orange: #ff8a5b;
 }
 
-*{
-    font-family: 'Roboto';
-    margin: 0;
-    padding: 0; 
+* {
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-color: var(--black);
-    margin: 0;
+body {
+  background-color: var(--black);
+  margin: 0;
 }
 
 /* header start  */
-header{
-    display: flex;
-    position: sticky;
-    justify-content: flex-start;
-    flex-flow: row nowrap;
-    background-color: var(--red);
-    width: 100%;
-    height: 7vh;
+header {
+  display: flex;
+  position: sticky;
+  justify-content: flex-start;
+  flex-flow: row nowrap;
+  background-color: var(--red);
+  width: 100%;
+  height: 7vh;
 }
 
-header nav{
-    overflow: hidden;
-    width: 100%; 
-    align-self: center;
+header nav {
+  overflow: hidden;
+  width: 100%;
+  align-self: center;
 }
 header nav div {
-    display: flex;
-    float: right;
-    gap: 2em;
-    margin: revert;
-    margin-right: 2rem;
+  display: flex;
+  float: right;
+  gap: 2em;
+  margin: revert;
+  margin-right: 2rem;
+  justify-content: flex-end;
 }
 
-.headerLogo{
-    height: -webkit-fill-available;
-    padding: 2px 20px;
-    padding-right: 6rem;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.63) 40%, rgba(97,38,31,1) 90%);
+.headerLogo {
+  height: -webkit-fill-available;
+  padding: 2px 20px;
+  padding-right: 6rem;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.63) 40%,
+    rgba(97, 38, 31, 1) 90%
+  );
 }
 
-.signInButton{
-    color: var(--black);
-    background-color: var(--orange);
-    text-decoration: none;
-    border: 0;
-    border-radius: 5px;
-    padding: 8px 25px;
+.signInButton {
+  color: var(--black);
+  background-color: var(--orange);
+  text-decoration: none;
+  border: 0;
+  border-radius: 5px;
+  padding: 8px 25px;
 
-    font-size: 16px;
+  font-size: 16px;
 }
-.outsideMenuElements{
-    color: var(--white);
-    text-decoration: none;
-    align-self: center;
-    font-size: 1.2rem;
-}
-
-
-.hamburger-menu{
-    display: none;
-    width: 45px;
-    height: 45px;
-}
-.signOutButton{
-    /* margin-right: 2rem; */
-    color: var(--orange);
+.outsideMenuElements {
+  color: var(--white);
+  text-decoration: none;
+  align-self: center;
+  font-size: 1.2rem;
 }
 
-
-.menuButton{
-    display: none;
+.hamburger-menu {
+  display: none;
+  width: 45px;
+  height: 45px;
+}
+.signOutButton {
+  /* margin-right: 2rem; */
+  color: var(--orange);
 }
 
+.menuButton {
+  display: none;
+}
 
 .menu {
-    display: none;
-    flex-direction: column;
-    
-    position: fixed;
-    z-index: 900;
-    top: 7%;
-    left: 0%;
-    
-    background-color: rgba(0, 0, 0, 0.80);
-    color: antiquewhite;
-    width: 100%;
-    height: 100%;
-    gap: 5px;
-    padding-top: 20px;
+  display: none;
+  flex-direction: column;
+
+  position: fixed;
+  z-index: 900;
+  top: 7%;
+  left: 0%;
+
+  background-color: rgba(0, 0, 0, 0.8);
+  color: antiquewhite;
+  width: 100%;
+  height: 100%;
+  gap: 5px;
+  padding-top: 20px;
 }
 
+.insideMenuElements {
+  display: flex;
+  justify-content: center;
+  align-self: center;
 
-.insideMenuElements{
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    
-    width: 100%;
-    margin: 0;
-    padding: 10px 0px;
-    font-size: 1.5rem;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0px;
+  font-size: 1.5rem;
 
-    color: var(--white);
-    text-decoration: none;
-    border-bottom: 1px solid white;
-    box-shadow: inset 0px 0px 20px 0px rgba(128, 128, 128, 0.355);
+  color: var(--white);
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  box-shadow: inset 0px 0px 20px 0px rgba(128, 128, 128, 0.355);
 }
 
+.profile-nav {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: rgb(197, 185, 187);
+  cursor: pointer;
+}
 
-.menu .signOutButton{
-    color: red
+.profile-nav a {
+  color: #ebf2fa;
+  text-decoration: none;
+}
+
+.profile-nav-cntnt-container {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  z-index: 50;
+  gap: 6px;
+  top: 68px;
+  max-width: 300px;
+  min-width: 100px;
+  padding: 3px 3px;
+  width: -webkit-fill-available;
+  background-color: rgba(52, 49, 49, 0.849);
+}
+.profile-nav-cntnt-container a {
+  color: #ebf2fa;
+  text-decoration: none;
+  padding: 3px 10px;
+  background-color: #1a19195e;
+}
+
+.menu .signOutButton {
+  color: red;
 }
 
 .is-visible {
-    display: flex;
+  display: flex;
 }
 /* header end  */
 
+.frontLine {
+  display: flex;
+  position: relative;
+  z-index: 0;
+  justify-content: center;
+  background-image: url(../images/background2.jpg);
 
-.frontLine{
-    display: flex;
-    position: relative;
-    z-index: 0;
-    justify-content: center;
-    background-image: url(../images/background2.jpg);
-    
-    background-size:cover;
-    background-repeat: no-repeat;
-    width: auto;
-    height: auto;
-    min-height: 940px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: auto;
+  height: auto;
+  min-height: 940px;
 }
 
-.container{
-    /* display: none; */
-    margin-right: 30vw;
-    display: flex;
-    flex-direction: column;
-    max-width: 50%;
-    align-items: center;
+.container {
+  /* display: none; */
+  margin-right: 30vw;
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  align-items: center;
 }
 
-.logo{
-    
-    transform: scale(0.8);
-    /* top: 1em;  */
-    max-width: 100%;
-    width:auto;
+.logo {
+  transform: scale(0.8);
+  /* top: 1em;  */
+  max-width: 100%;
+  width: auto;
 
-
-    filter: drop-shadow(0px 3px 2px #61261F);
+  filter: drop-shadow(0px 3px 2px #61261f);
 }
 
-.description{
-    color: var(--black);
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    /* background-color: #33333328; */
-    min-width: 20rem;
-    letter-spacing: 3px;
-    margin-bottom: 8px;
-    text-shadow:   0 1px 3px #fffefe;
+.description {
+  color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  /* background-color: #33333328; */
+  min-width: 20rem;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+  text-shadow: 0 1px 3px #fffefe;
 }
-.signUpButton{
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    padding: 14px 100px;
-    border-width: 0px;
-    border-radius: 5px;
-    font-size: 1.4em;
-    background-color: var(--red);
-    color: var(--white);
-    text-decoration: none;
-}
-
-.sign-in-small-screen{
-    display: none;
+.signUpButton {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  padding: 14px 100px;
+  border-width: 0px;
+  border-radius: 5px;
+  font-size: 1.4em;
+  background-color: var(--red);
+  color: var(--white);
+  text-decoration: none;
 }
 
-
-footer{
-    display: flex;
-    /* position:relative; */
-    height: 28px;
-    background-color: var(--black);
+.sign-in-small-screen {
+  display: none;
 }
 
-.copyright{
-    color: var(--white);
-    justify-content: center;
-    align-self: center;
+footer {
+  display: flex;
+  /* position:relative; */
+  height: 28px;
+  background-color: var(--black);
+}
+
+.copyright {
+  color: var(--white);
+  justify-content: center;
+  align-self: center;
 }
 
 @media screen and (max-width: 690px) {
-    
-    .frontLine{
-        position: static;
-        z-index: 10;
-        /* background-size: cover; */
-        height: 20px;
-        
-    }
-    
-    .hamburger-menu{
-        display: flex;
-        z-index: 500;
-    }
-    .container{
-        /* display: none; */
-        position: static;
-        max-width: 90%;
-        margin-right: 0;
-        margin-top: 60px;
-    }
-    
-    img .logo{
-        /* overflow: hidden; */
+  .frontLine {
+    position: static;
+    z-index: 10;
+    /* background-size: cover; */
+    height: 20px;
+  }
 
-        position: static;
-        z-index: 11;
-    }
-    
-    
-    .outsideMenuElements{
-        display: none;
-    }
+  .hamburger-menu {
+    display: flex;
+    z-index: 500;
+  }
+  .container {
+    /* display: none; */
+    position: static;
+    max-width: 90%;
+    margin-right: 0;
+    margin-top: 60px;
+  }
 
-    .signUpButton{
-        padding: 12px 85px;
-     margin-top: 10px;
+  img .logo {
+    /* overflow: hidden; */
 
-    }
-    
-    .signInButton{
-        display: none;
-    }
-    
-    .sign-in-small-screen{
-        margin-top: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-self: center;
-        width: 20vw;
-        height: auto;
-        border: 1px solid black;
-    }
+    position: static;
+    z-index: 11;
+  }
+
+  .outsideMenuElements {
+    display: none;
+  }
+
+  .signUpButton {
+    padding: 12px 85px;
+    margin-top: 10px;
+  }
+
+  .signInButton {
+    display: none;
+  }
+
+  .sign-in-small-screen {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    width: 20vw;
+    height: auto;
+    border: 1px solid black;
+  }
 }
 
 @media screen and (max-width: 375px) {
-    body{
-        overflow-x: hidden;
-    }
-    
-    .frontLine{
-        background-image: url(/images/background-320.png);
-        background-size: cover;
-    }
-    
-    .searchBox{
-        display: none;
-    }
+  body {
+    overflow-x: hidden;
+  }
 
+  .frontLine {
+    background-image: url(/images/background-320.png);
+    background-size: cover;
+  }
+
+  .searchBox {
+    display: none;
+  }
 }

@@ -1,6 +1,6 @@
-const button = document.getElementById("js-toggle-button");
-const menu = document.getElementById("js-menu");
+// const button = document.getElementById("js-toggle-button");
+// const menu = document.getElementById("js-menu");
 
-button.addEventListener("click", () => {
-  menu.classList.toggle("is-visible");
-});
+// button.addEventListener("click", () => {
+//   menu.classList.toggle("is-visible");
+// });
